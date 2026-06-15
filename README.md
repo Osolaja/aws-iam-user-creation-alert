@@ -43,6 +43,17 @@ terraform plan
 
 terraform apply
 
+## Screenshots
+
+### IAM User Creation
+
+![IAM User Created](screenshots/iam-user-created.png)
+
+### Email Alert Notification
+
+![Email Alert](screenshots/email-alert.png)
+
+
 ## Validation
 
 1. Create a test IAM user
