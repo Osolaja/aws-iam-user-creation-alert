@@ -43,7 +43,7 @@ terraform plan
 
 terraform apply
 
-## Architecture Diagram
+### Architecture Diagram
 
 ```mermaid
 flowchart TD
@@ -52,6 +52,17 @@ flowchart TD
     C --> D[SNS Topic]
     D --> E[Email Alert to Security Admin]
     B --> F[S3 Bucket Stores CloudTrail Logs]
+```
+
+## Screenshots
+
+### IAM User Creation
+
+![IAM User Created](screenshots/iam-user-created.png)
+
+### Email Alert Notification
+
+![Email Alert](screenshots/email-alert.png)
 
 ## Screenshots
 
