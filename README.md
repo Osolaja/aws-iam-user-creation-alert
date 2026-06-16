@@ -43,6 +43,16 @@ terraform plan
 
 terraform apply
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    A[IAM User Created] --> B[CloudTrail Logs API Event]
+    B --> C[EventBridge Rule Detects CreateUser]
+    C --> D[SNS Topic]
+    D --> E[Email Alert to Security Admin]
+    B --> F[S3 Bucket Stores CloudTrail Logs]
+
 ## Screenshots
 
 ### IAM User Creation
